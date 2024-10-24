@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Button</title>
+    <!-- Link to an icon library (FontAwesome as an example) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Button container */
+        .button-container {
+            background-color: #1976d2;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            height: 100px;
+            border-radius: 8px;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s ease;
+            cursor: pointer; /* Cursor turns to a pointer (hand) */
+            text-decoration: none; /* Removes underline from text */
+        }
+
+        /* Hover effect */
+        .button-container:hover {
+            background-color: #145a86; /* Darker blue on hover */
+        }
+
+        /* Icon styling */
+        .button-container i {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        /* Button container */
+        .button-container1 {
+            background-color: #1976d2;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            height: 100px;
+            border-radius: 8px;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s ease;
+            cursor: pointer; /* Cursor turns to a pointer (hand) */
+            text-decoration: none; /* Removes underline from text */
+        }
+
+        /* Hover effect */
+        .button-wrapper a:hover {
+            background-color: #145a86; /* Darker blue on hover */
+        }
+
+        /* Icon styling */
+        .button-container i {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        .button-wrapper {
+            display: flex;
+            justify-content: center; /* Center content */
+            align-items: center;     /* Align vertically */
+            gap: 200px;              /* Space between buttons */
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="button-wrapper">  
+        <!-- The button -->
+        <a href="https://google.com" class="button-container" onclick="window.location.href=this.href; return false;">
+            <i class="fas fa-home"></i> <!-- Updated to use FontAwesome home icon -->
+            <span>Resource Hub</span>
+        </a>
+        <a href="https://sites.google.com/u/0/d/1tPKuWehm-a-fU3V255cPFJsNrEhn2nw6/p/1VvgRpwOu60Trk2ELpqkEZhii7QIcapDp/preview" class="button-container1" onclick="window.location.href=this.href; return false;">
+            <i class="fas fa-home"></i> <!-- Updated to use FontAwesome home icon -->
+            <span>Contacts</span>
+        </a>
+    </div> 
+</body>
+</html>
